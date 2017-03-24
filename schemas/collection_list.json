@@ -1,0 +1,9 @@
+{
+    "properties": {
+        "status": { "type": "integer", "minimum":0 },
+        "data": { "$ref": "./collection.json" },
+        "object": { "type": "string" },
+        "hasMore": { "type": "boolean" },
+        "required": [ "status", "data", "object" ]
+    }
+}
