@@ -1,9 +1,14 @@
 {
+    "id": "https://ventureiq.github.io/schemas/collection_list.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "response object containing list of collections",
+    "type": "object",
     "properties": {
         "status": { "type": "integer", "minimum": 0 },
-        "data": { "type": "array", "item": { "$ref": "./collection.json" } },
+        "data": { "type": "array", "item": { "$ref": "https://ventureiq.github.io/schemas/collection.json" } },
         "object": { "enum:": ["collection"] },
-        "hasMore": { "type": "boolean" },
-        "required": [ "status", "data", "object" ]
-    }
+        "hasMore": { "type": "boolean" }
+    },
+    "required": [ "status", "data", "object" ],
+    "additionalProperties": false
 }
