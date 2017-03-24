@@ -1,0 +1,29 @@
+{
+    "properties": {
+        "collection_id": {
+            "type":"integer",
+            "minimum":0
+        },
+        "name": {
+            "type": "string"  
+        },
+        "created_at": {
+            "type":"string"
+        },
+        "updated_at": {
+            "type":"string"
+        },
+        "user_id": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "client_id": {
+            "type":"integer",
+            "minimum":0
+        },
+        "visibility": {
+            "enum:": ["user", "client", "public"]
+        }
+    },
+    "required":["collection_id","name","user_id","client_id","visibility"]
+}
