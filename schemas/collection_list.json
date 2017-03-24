@@ -1,8 +1,8 @@
 {
     "properties": {
-        "status": { "type": "integer", "minimum":0 },
-        "data": { "$ref": "./collection.json" },
-        "object": { "type": "string" },
+        "status": { "type": "integer", "minimum": 0 },
+        "data": { "type": "array", "item": { "$ref": "./collection.json" } },
+        "object": { "enum:": ["collection"] },
         "hasMore": { "type": "boolean" },
         "required": [ "status", "data", "object" ]
     }

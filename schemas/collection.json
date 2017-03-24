@@ -22,7 +22,8 @@
             "minimum":0
         },
         "visibility": {
-            "enum:": ["user", "client", "public"]
+            "type": "array",
+            "items": { "$ref": "./collection_visibility.json" }
         }
     },
     "required":["collection_id","name","user_id","client_id","visibility"]

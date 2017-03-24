@@ -1,0 +1,8 @@
+{
+    "properties": {
+        "status": { "type": "integer", "minimum":0 },
+        "data": { "$ref": "./collection.json" },
+        "object": { "enum:": ["collection"] },
+        "required": [ "status", "data", "object" ]
+    }
+}
